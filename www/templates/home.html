@@ -1,0 +1,12 @@
+<ion-view view-title="Início">
+  <ion-content>
+    <div class="card">
+      <div class="item item-text-wrap">
+        Último código:
+        <span ng-if="vm.lastScan">{{ vm.lastScan.code }}</span>
+        <span ng-if="!vm.lastScan">(nenhum)</span>
+      </div>
+    </div>
+    <button class="button button-full button-positive" ng-click="vm.scan()">Scan</button>
+  </ion-content>
+</ion-view>

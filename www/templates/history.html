@@ -1,0 +1,10 @@
+<ion-view view-title="História">
+  <ion-content>
+    <ul class="list">
+      <a class="item" ng-repeat="item in vm.scanList" ui-sref="detail({id: item.id})">
+        {{ item.code }}
+        <span class="item-note">{{ item.created_on | date : 'medium' }}</span>
+      </a>
+    </ul>
+  </ion-content>
+</ion-view>

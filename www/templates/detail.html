@@ -1,0 +1,13 @@
+<ion-view view-title="Detalhe de {{ vm.scan.code }}">
+  <ion-nav-buttons>
+      <button class="button button-clear" ng-click="vm.goBack()">
+          <i class="ion-ios-arrow-back"></i> Voltar
+      </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="list">
+      <div class="item">Código: {{ vm.scan.code }}</div>
+      <div class="item">Data: {{ vm.scan.created_on | date : 'medium' }}</div>
+    </div>
+  </ion-content>
+</ion-view>
